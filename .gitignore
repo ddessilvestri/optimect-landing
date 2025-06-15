@@ -1,0 +1,30 @@
+# Python virtual environment
+venv/
+.env
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Uploads directory
+backend/uploads/
+
+# Logs and temporary files
+*.log
+*.sqlite3
+*.db
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Docker-related (optional)
+*.pid
+*.bak
+docker-compose.override.yml

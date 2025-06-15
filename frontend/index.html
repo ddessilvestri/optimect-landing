@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Optimec SRL - Contacto</title>
+</head>
+<body>
+    <h1>Contacto - Optimec SRL</h1>
+    <form action="http://localhost:5050/contacto" method="POST" enctype="multipart/form-data">
+        <label>Nombre completo: <input type="text" name="nombre" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Teléfono: <input type="text" name="telefono" required></label><br>
+        <label>Mensaje:<br><textarea name="mensaje" rows="5" cols="40" required></textarea></label><br>
+        <label>Archivo adjunto: <input type="file" name="archivo" accept=".pdf,.doc,.docx,.xls,.xlsx"></label><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
