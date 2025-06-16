@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optimec SRL - Mecanizados CNC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #003049;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .description {
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    input, textarea, button, select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #f77f00;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #d65a00;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Optimec SRL</h1>
+    <p>Mecanizados de Precisión CNC & Soluciones Industriales</p>
+  </header>
+
+  <main>
+    <div class="description">
+      <p>
+        Somos líderes en servicios de mecanizado CNC, torneado, fresado y soluciones de ingeniería para la industria. Trabajamos con tecnología de punta para ofrecerte calidad, eficiencia y compromiso.
+      </p>
+    </div>
+
+    <form action="http://localhost:5050/contacto" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="tel" name="telefono" placeholder="Teléfono" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+      <input type="file" name="archivo" accept=".pdf,.doc,.docx,.xls,.xlsx" />
+      <button type="submit">Enviar consulta</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Optimec SRL - Todos los derechos reservados
+  </footer>
+</body>
+</html>
